@@ -11,7 +11,9 @@ def cli(name):
         click.echo(click.style(f"{result}:", fg="blue"))
     else:
         # Handle case where no argument is passed
-        click.echo(click.style("Please provide a name using the --name option.", fg="red"))
+        click.echo(
+            click.style("Please provide a name using the --name option.", fg="red")
+        )
 
 
 if __name__ == "__main__":
